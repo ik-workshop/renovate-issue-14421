@@ -4,7 +4,7 @@ SHELL = /bin/sh -o pipefail
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-CI_RENOVATE_IMAGE := renovate/renovate:31.89-slim
+CI_RENOVATE_IMAGE := renovate/renovate:latest
 LOG_LEVEL := debug
 
 help:
@@ -21,7 +21,7 @@ hooks: ## install pre commit.
 validate: ## Validate files with pre-commit hooks
 	@pre-commit run --all-files
 
-run: ## Run renovate locally name=ex5
+run: ## Nothing to RUN yet
 	@docker run --rm -it \
 		-e RENOVATE_TOKEN \
 		-e LOG_LEVEL=$(LOG_LEVEL) \
@@ -29,12 +29,3 @@ run: ## Run renovate locally name=ex5
 		-v ${PWD}/config-$(name).js:/usr/src/app/config.js \
 		-v ${PWD}/repos.json:/usr/src/app/repos.json \
 		$(CI_RENOVATE_IMAGE) renovate --dry-run=false
-
-example1: ## Run example 1
-	@$(MAKE) run name=ex1
-
-example2: ## Run example 2 with custom empty label
-	@$(MAKE) run name=ex2
-
-example3: ## Run example 3 enchanced version of ex2
-	@$(MAKE) run name=ex3
