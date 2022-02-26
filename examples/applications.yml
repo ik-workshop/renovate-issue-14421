@@ -1,3 +1,4 @@
+# This section describes how to deploy multiple apps with a minimal manifest.
 ---
 applications:
 - name: YOUR-APP-1
