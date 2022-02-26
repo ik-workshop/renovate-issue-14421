@@ -166,7 +166,7 @@ examples
 ## Resources
 
 - [Renovate: documentation](https://docs.renovatebot.com/)
-- [Renovate: docs template fields](https://docs.renovatebot.com/templates/)
+- [Renovate: aws-machine-image](https://docs.renovatebot.com/modules/datasource/#aws-machine-image-datasource)
 
 <!-- resources -->
 [template.generate]: https://github.com/ik-workshop/renovate-issue-14421/generate
