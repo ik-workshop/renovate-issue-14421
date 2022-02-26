@@ -3,7 +3,6 @@
 In the meantime, Renovate does not support multiple regions. AWS has different resources in different region/location. From [the code](https://github.com/renovatebot/renovate/blob/f5cc1de36f7d6f3ce7d689a9b6675a930d81337c/lib/datasource/aws-machine-image/index.ts#L38) the region is supplied with environment variable e.g. AWS_REGION or AWS_DEFAULT_REGION. First of all, this is not documented. Second, there is no way to switch regions on the fly. Filters do no support regions, its an external value.
 
 - [Issue](https://github.com/renovatebot/renovate/issues/14421)
-- [MR](https://github.com/renovatebot/renovate/pulls)
 
 ---
 
