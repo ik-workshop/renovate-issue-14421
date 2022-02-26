@@ -144,7 +144,7 @@ Terraform `*vars*.tf` default values and `*vars*.tfvars`
 examples
 ├── vars.tf
 ├── dev
-│   ├── eu-central-1│ 
+│   ├── eu-central-1
 │   │   └── terraform.tfvars
 ```
 
