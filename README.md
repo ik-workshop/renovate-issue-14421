@@ -62,8 +62,8 @@ In the meantime, Renovate does not support multiple regions. AWS has different r
 
 Folder structure. This does not reflect live example, it just combination of configs.
 
-```
-.
+```tree
+examples
 ├── dev
 │   ├── eu-central-1
 │   │   ├── terargrun.hcl
@@ -86,6 +86,12 @@ As per the [documentation](https://docs.renovatebot.com/modules/datasource/#aws-
 
 - [default](./examples/values.yml)
 
+```
+examples
+├── values.yml
+└── vars.tf
+```
+
 ### Example 2
 
 Region supplied within the path
@@ -93,8 +99,8 @@ Region supplied within the path
 - [region in path: 1](examples/dev/eu-central)
 - [region in path: 2. Terragrunt dinamically reads it](examples/dev/eu-west-1/terargrun.hcl)
 
-```
-.
+```tree
+examples
 ├── dev
 │   ├── eu-central-1
 │   │   ├── terargrun.hcl
@@ -123,12 +129,27 @@ Region is in the file itself
 - [Infrastructure Manifest: 2](examples/infrastructure-manifest.yml)
 - [Infrastructure Manifest: 3](examples/amis.yml)
 
-```
-.
+```tree
+examples
 ├── infrastructure-manifest.json
 ├── infrastructure-manifest.yml
 ├── amis.yml
 ```
+
+### Example 5
+
+Terraform `*vars*.tf` default values and `*vars*.tfvars`
+
+```tree
+examples
+├── vars.tf
+├── dev
+│   ├── eu-central-1│ 
+│   │   └── terraform.tfvars
+```
+
+- [vars.tf](examples/vars.tf)
+- [terraform.tfvars](examples/dev/eu-central-1/terraform.tfvars)
 
 ### Extra Examples
 
