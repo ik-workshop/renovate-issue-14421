@@ -1,0 +1,12 @@
+# In reality this file may not only contain ami, but other versions and filters, just for simplicity it contains ami_id only
+---
+
+eu-west-1:
+  ec2_ami_id: ami-0083e9407e275acf2
+  eks_ami_id: ami-9939e9407e275add2
+  golden_ami_id: ami-9939e9407e275ggg2
+
+eu-central-1:
+  ec2_ami_id: ami-0083e9407e275kkc2
+  eks_ami_id: ami-9939e9407e275lll2
+  golden_ami_id: ami-9939e9407e275ggg3

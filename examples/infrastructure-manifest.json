@@ -1,0 +1,50 @@
+{
+  "prod": {
+    "us-east-1": {
+      "appserve01ea1": {
+        "applications": [
+          "appserve"
+        ],
+        "zone": "us-east-1a",
+        "fqdn": "ec2-1-2-3-4.compute-1.amazonaws.com",
+        "private ip": "10.9.8.7",
+        "public ip": "1.2.3.4",
+        "ami_id": "i-a1234bc5"
+      },
+      "appserve02ea1": {
+        "applications": [
+          "appserve"
+        ],
+        "zone": "us-east-1b",
+        "fqdn": "ec2-1-2-3-5.compute-1.amazonaws.com",
+        "private ip": "10.9.8.6",
+        "public ip": "1.2.3.5",
+        "ami_id": "i-b5678cd9"
+      }
+    }
+  },
+  "staging": {
+    "rs-us-1": {
+      "appserve01st1": {
+        "applications": [
+          "appserve"
+        ],
+        "zone": "rs-us-1a",
+        "fqdn": "10.9.8.7",
+        "private ip": "10.9.8.7",
+        "public ip": "5.6.7.8",
+        "ami_id": "21234567"
+      },
+      "appserve02st1": {
+        "applications": [
+          "appserve"
+        ],
+        "zone": "rs-us-1a",
+        "fqdn": "10.9.8.6",
+        "private ip": "10.9.8.6",
+        "public ip": "5.6.7.9",
+        "ami_id": "21234568"
+      }
+    }
+  }
+}
