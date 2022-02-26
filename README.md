@@ -128,11 +128,13 @@ Region is in the file itself
 - [Infrastructure Manifest: 1](examples/infrastructure-manifest.json)
 - [Infrastructure Manifest: 2](examples/infrastructure-manifest.yml)
 - [Infrastructure Manifest: 3](examples/amis.yml)
+- [Infrastructure Manifest: 4](examples/applications.yml)
 
 ```tree
 examples
 ├── infrastructure-manifest.json
 ├── infrastructure-manifest.yml
+├── applications.yml
 ├── amis.yml
 ```
 

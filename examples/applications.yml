@@ -1,0 +1,8 @@
+---
+applications:
+- name: YOUR-APP-1
+  region: eu-west-1
+  ami_id: ami-1085e9407e275add2
+- name: YOUR-APP-1-DR
+  region: eu-central-1
+  ami_id: ami-1085e9407e275ccc4
